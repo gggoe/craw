@@ -5,7 +5,7 @@ let debug = require('debug')('crawl:write');
 module.exports = function (movies, callback) {
     async.forEach(movies, function (movie, cb) {
         Movie.create(movie, cb);
-        debug(`写入电影${movie.name}`);
+        debug(`写入电影:${movie.name}`);
     }, callback);
 };
 // module.exports([

@@ -13,6 +13,9 @@ let start = function () {
         },
         function (data, cb) {
             read(url, cb);
+            // read(url, function () {
+            //
+            // });
         },
         function (movies, cb) { // data = movies
             write(movies, cb);

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度电影排行</title>
+    <meta type="">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<!--.container>.row>.col-sam-12>.panel.panel-default>.panel-heading.text-center+(.panel-body>ul.list-group>li)+.panel-footer-->
+<div class="container">
+    <div class="row">
+        <div class="col-sam-12">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                        <h3>百度电影排行</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <% movies.forEach(function(movie){ %>
+                        <li class="list-group-item">
+                            <a href="<%= movie.url %>">
+                                <%= movie.name %>
+                            </a>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -6,3 +6,4 @@ let MovieSchema = new mongoose.Schema({
     url: String
 });
 module.exports = mongoose.model('Movie', MovieSchema);
+// exports.Movie = mongoose.model('Movie', MovieSchema);
