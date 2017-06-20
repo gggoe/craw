@@ -1,7 +1,7 @@
 let express = require('express');
 let Movie = require('./model');
 let app = express();
-console.log(123);
+console.log("服务启动");
 app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
     Movie.find({}, function (err, movies) {
